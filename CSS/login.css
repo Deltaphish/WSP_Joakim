@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+h1{
+    position: absolute;
+    text-align: center;
+    width:100vw;
+    font-family:'Fjalla One', sans-serif;
+    font-size:50px;
+}
+
+form{
+    display: grid;
+    position: relative;
+    top:200px;
+}
+
+#Username{
+    grid-row:1;
+    grid-column: 2;
+}
+
+#Password{
+    grid-row:1;
+    grid-column:3;
+}
+
+#Submit{
+   margin-top: 5px;
+   height: 60px;
+   
+    grid-row:2;
+    grid-column-start:2;
+    grid-column-end:4;
+    background-color: orange;
+}

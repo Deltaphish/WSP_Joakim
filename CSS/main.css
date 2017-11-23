@@ -1,0 +1,14 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #696969
+  }
+
+form{
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+h1{
+  font-family:'Fjalla One', sans-serif;
+}

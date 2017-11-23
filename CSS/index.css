@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+body{
+  margin:0px;
+  padding:0px;
+  background-color: #696969
+}
+
+input[type=submit]{
+  width:100%;
+  height:100%;
+  border-style: none;
+  border-radius: 10px;
+  background-color: #FFA600;
+  font-size: 40px;
+  color:#000000;
+}
+
+input[type=submit]:hover{
+  color:white;
+}
+
+#logo{
+  position: absolute;
+  margin-top:0px;
+  top:5px;
+  font-size:180px;
+  left:120px;
+  right: 120px;
+  font-family:'Fjalla One', sans-serif;
+  color:#000000;
+  text-align: center;
+}
+
+#Login{
+  grid-column: 2;
+  width: 160px;
+  height: 60px;
+  grid-row: 2;
+  align-self:stretch;
+  margin-bottom: 0px;
+}
+
+#Register{
+  grid-column: 4;
+  grid-row: 2;
+  width: 160px;
+  height: 60px;
+  align-self: stretch;
+  margin-bottom: 0px;
+}
+
+
+#grid-body{
+  display: grid;
+  grid-template-columns: 1.55fr auto 1.7fr auto 2fr;
+  grid-template-rows: 5fr 1fr 2fr;
+}
+

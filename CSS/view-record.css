@@ -1,0 +1,27 @@
+#centering-div{
+  display:grid;
+  grid-template-columns: 20% 1fr 20%;
+}
+
+table{
+  margin-top: 30px;
+  grid-column: 2;
+  text-align: center;
+  border-spacing: 0px;
+}
+
+
+th{
+  background-color: orange;
+  margin-bottom: 0px;
+  color:black;
+}
+
+tr{
+  margin-top:0px;
+  color:lightgrey;
+}
+
+tr:nth-of-type(2n){
+  background-color: grey;
+}

@@ -1,0 +1,16 @@
+form{
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr 40%;
+  grid-template-rows: 50px;
+  margin-top: 50px;
+}
+input[type=number]{
+  grid-row: 1;
+  grid-column: 2;
+  height: 100%;
+}
+input[type=submit]{
+  grid-row:1;
+  grid-column: 3;
+  height: 100%;
+}
