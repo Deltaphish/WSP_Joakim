@@ -4,8 +4,8 @@
 </head>
 <body>
   <form action="register-handler.php" method="POST">
-    <input type="text" name="username" id="Username"/><br><br>
-    <input type="password" name="passwd" id="Password"/><br><br>
-    <input type="submit" value2="Register" id="Submit"/>
+    <input type="text" name="username" id="Username" placeholder="Username"/><br><br>
+    <input type="password" name="passwd" id="Password" placeholder="Password"/><br><br>
+    <input type="submit" value="Register" id="Submit"/>
   </form>
 </body>

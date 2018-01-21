@@ -13,8 +13,8 @@
             }
          ?>
         <form action="login-handler.php" method="POST">
-            <input type="text" name="username" placeholder="Username" id="Username"/>
-            <input type="password" name="password" placeholder="Password" id="Password"/><br>
+            <input type="text" name="username" placeholder="Username" id="Username" />
+            <input type="password" name="password" placeholder="Password" id="Password" /><br>
             <input type="submit" value="Login" id="Submit"/>
         </form>
     </body>

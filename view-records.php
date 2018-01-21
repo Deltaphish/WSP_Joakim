@@ -14,6 +14,8 @@
 <div id="centering-div"/>
 
 <?php
+// Hämtar alla rekorder från användare och
+// Visar dem i en tabel
 session_start();
 if(empty($_SESSION['User'])){
   header('Location: login.php?error=1');
@@ -39,9 +41,14 @@ foreach($res as $key => $row){
   $weight[$key] = $row[2];
 }
 array_multisort($weight,SORT_DESC,$res);
-echo('<table><tr><th>User</th><th>Record</th></tr>');
+echo('<table><tr><th>User</th><th>Record</th><th></th></tr>');
 foreach($res as $key => $row){
-  echo('<tr> <td>'.$row[1].'</td><td>'.$row[2].'</td></tr>');
+  if($row[1] == $_SESSION['User']){
+	echo('<tr> <td>'.$row[1].'</td><td>'.$row[2].' </td><td><a href="remove-record.php">Remove record</a></td></tr>');  
+  }
+  else{
+	echo('<tr> <td>'.$row[1].'</td><td>'.$row[2].'</td><td></td></tr>');
+  }
 }
 echo ('</table>');
   ?>

@@ -1,4 +1,8 @@
+
 <?php
+	// Tar emot Username och Password från login.php
+	// Om Username och Lösenord stämmer med databasen så sänds användaren vidare till home.php
+	// Annars sänds så kommer användaren tillbaks till login.php
 	if(!empty($_POST['username']) && !empty($_POST['password'])){
 		$sqli = new mysqli('localhost','j','portal','gainz');
 		echo "car";
@@ -6,7 +10,7 @@
 			echo "Connection error to server, please contact a admin.";
 			die();
 		}
-		echo "car";
+		echo "car"; 
 		if(!$stmt = $sqli->prepare('SELECT hash from users where userName=(?)')){
 			echo "Error creating sql statment";
 			die();

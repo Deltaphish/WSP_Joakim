@@ -1,4 +1,6 @@
 <?php
+// Tar emot Username och Password från register.php
+// Om Username och Password inte finns i DB så skrivs de in.
 if(empty($_POST['username']) || empty($_POST['passwd'])){
   echo("Registration failed");
   die();

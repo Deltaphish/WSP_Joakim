@@ -8,9 +8,26 @@ input[type=number]{
   grid-row: 1;
   grid-column: 2;
   height: 100%;
+  background: rgba(0,0,0,0);
+  border-top:none;
+  border-left:none;
+  border-right:none;
 }
 input[type=submit]{
   grid-row:1;
   grid-column: 3;
   height: 100%;
+  margin-left:40px;
+  margin-top:15px;
+  width: 70%;
+  height: 60%;
+  background-color: orange;
+  border-style: none;
+  box-shadow: 2px 2px 2px #414141;
+  transition: border-color 2s;
+}
+
+input[type=number]:focus{
+  border-color:orange;
+  color:orange;
 }

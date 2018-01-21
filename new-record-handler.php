@@ -1,4 +1,5 @@
 <?php
+// Tar rekorden och sänder den till DB
 session_start();
 if(empty($_SESSION['User'])){
   header('Location: login.php?error=1');
@@ -42,6 +43,10 @@ if(!empty($_POST['weight'])){
   }
 
   $stmt->execute();
+  // Sänder data för grafen i home.php till DB
+  $logstmt = $sqli->prepare("INSERT INTO log (id,user,weight) VALUES(id,?,?)");
+  $logstmt->bind_param("si",$_SESSION['User'],$_POST['weight']);
+  $logstmt->execute();
   header('Location: home.php');
   die();
 

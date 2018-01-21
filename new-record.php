@@ -21,6 +21,6 @@
   ?>
   <form action="new-record-handler.php" method="POST">
     <input type="number" name="weight" placeholder="Kg"/>
-    <input type="submit"/>
+    <input type="submit" value="Submit"/>
   </form>
 </body>
